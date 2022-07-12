@@ -1,4 +1,4 @@
-const { Schema, model, SchemaTypes } = require('mongoose');
+const { Schema, model } = require('mongoose');
 
 const shopAndGoodsSchema = Schema(
   {
@@ -33,6 +33,9 @@ const shopAndGoodsSchema = Schema(
     price: {
       type: Number,
       min: 0.01,
+    },
+    _id: {
+      type: String,
     },
   },
   { versionKey: false, timestamps: true },

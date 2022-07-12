@@ -8,6 +8,7 @@ const item = {
     title: { type: 'string' },
     price: { type: 'string' },
     shopname: { type: 'string' },
+    _id: { type: 'string' },
   },
 };
 
