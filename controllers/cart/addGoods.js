@@ -2,6 +2,8 @@ const Cart = require('../../models/cart');
 
 async function addGoods(req, reply) {
   try {
+    console.log(req.body);
+
     const newCart = { ...req.body };
 
     const result = await Cart.create(newCart);

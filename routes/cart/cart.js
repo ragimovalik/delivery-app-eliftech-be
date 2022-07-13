@@ -4,11 +4,16 @@ const { addGoods } = require('../../controllers/cart');
 const item = {
   type: 'object',
   properties: {
-    img: { type: 'string' },
-    description: { type: 'string' },
-    title: { type: 'string' },
-    price: { type: 'string' },
-    shopname: { type: 'string' },
+    item: {
+      type: 'object',
+      properties: {
+        img: { type: 'string' },
+        description: { type: 'string' },
+        title: { type: 'string' },
+        price: { type: 'string' },
+        shopname: { type: 'string' },
+      },
+    },
     quantity: { type: 'number' },
   },
 };
@@ -31,7 +36,7 @@ const addGoodsOpt = {
     body: {
       type: 'object',
       properties: {
-        buyer: {},
+        buyer: buyer,
         goods: { type: 'array', items: item },
       },
     },
