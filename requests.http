@@ -1,5 +1,6 @@
-@baseUrl = https://delivery-app-eliftech-be.vercel.app
+# @baseUrl = https://delivery-app-eliftech-be.vercel.app
 # @baseUrl = http://127.0.0.1:8000
+@baseUrl = https://uhpv22.deta.dev
 
 ### REQUEST FOR ALL GOODS FROM ALL SHOPS
 GET {{baseUrl}} HTTP/1.1

@@ -34,7 +34,7 @@ const start = async () => {
 
     fastify.log.info('Mongoose connected');
 
-    await fastify.listen({ port: PORT });
+    // await fastify.listen({ port: PORT });
   } catch (err) {
     fastify.log.error(err.message);
     process.exit(1);
@@ -42,3 +42,5 @@ const start = async () => {
 };
 
 start();
+
+module.exports = fastify;
